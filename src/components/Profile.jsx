@@ -1,9 +1,9 @@
-function Profile() {
+function Profile({userName,email,city}) {//{} must be added in the brakets
     return ( 
         <>
-          <p style={{color:"red"}}>Name  : Isuru sandaruwan</p>
-          <p>Email :isurusandaruwan@gmail.com</p>
-          <p>City  :Ratnapura</p>
+          <p>{"Name :" + userName}</p>
+          <p>{"Email :" + email}</p>
+          <p>{"City :" + city}</p>
         </>
      );
 }
