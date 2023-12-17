@@ -7,14 +7,24 @@ import Profile from "./components/profile"
 
 
 function App() {
- const [count,setCount]=useState(0);
+ const [count,setCount]=useState(10);
   const userData={
     userName:"user123",
     eamil:"abs",
     city:"kandy"
 
   };
-  const handleClick=()=>{setCount((count+1))};
+  const handleClick=()=>{
+  //   if(count==10){
+  //     setCount(0);
+  //   }else{
+  //     setCount(count+1);
+  //   }
+  // 
+     if(count>0){
+      count===1 ? setCount("Stop") : setCount(count -1);
+     }
+  };
 
 
   return (
