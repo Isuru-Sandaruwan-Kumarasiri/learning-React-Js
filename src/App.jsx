@@ -48,7 +48,7 @@ function App() {
 
 
       <div>
-        <h3>{count}</h3>
+        <h3 style={{color:count>3 ? "black":"red"}}>{count}</h3>
         <button onClick={handleClick}>Click Me</button>
       </div>
 
