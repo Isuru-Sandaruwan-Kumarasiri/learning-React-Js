@@ -1,0 +1,23 @@
+.card-bg{
+    background-color: aqua;
+    width: 20vh;
+    color: black;
+    height: 30vh;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 700px ;
+
+}
+.card-num{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2vh;
+
+}
+.card-info{
+    text-align: center;
+}

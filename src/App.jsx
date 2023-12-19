@@ -4,6 +4,7 @@ import Header from "./components/header"
 import Profile from "./components/profile"
 import Mapping from "./components/mapping";
 import UserEffect from "./components/UserEffect";
+import Card from "./components/card";
 
 
 
@@ -27,6 +28,17 @@ function App() {
 //       count===1 ? setCount("Stop") : setCount(count -1);
 //      }
 //   };
+  
+// ***************Mapping**********
+
+
+
+    //  const numArray=[1,2,3,4,5,6];
+    //  const sqartArray=numArray.map((num)=>{return num*2})
+    //  console.log(sqartArray)
+
+    const numArray=[1,2,3,4,5,6];
+    const setCard=numArray.map((num)=>{return <Card number={num}></Card>})
 
 
 
@@ -67,9 +79,14 @@ function App() {
 
     {/* *************UserEffect********** */}
 
-    <UserEffect></UserEffect>
+    {/* <UserEffect></UserEffect> */}
 
+
+
+                 
+    <div>{setCard}</div>
     </>
+
   )
 }
 
