@@ -1,11 +1,12 @@
 import './Card.css'
 
-function Card({number}) {
+function Card({userName,age,details}) {
     return (  
         <>
           <div className="card-bg">
-               <div className="card-num">{number}</div>
-               <div className="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum corrupti nesciunt facilis voluptatum iste quam consequuntur dignissimos. Facere, ab sit.</div>
+               <div className="card-name">{userName}</div>
+               <div className="card-age">{age}</div>
+               <div className="card-details">{details}</div>
           </div>
         </>
     );

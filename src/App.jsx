@@ -29,19 +29,40 @@ function App() {
 //      }
 //   };
   
-// ***************Mapping**********
 
+
+                                      // ***************Mapping**********
 
 
     //  const numArray=[1,2,3,4,5,6];
     //  const sqartArray=numArray.map((num)=>{return num*2})
     //  console.log(sqartArray)
 
-    const numArray=[1,2,3,4,5,6];
-    const setCard=numArray.map((num)=>{return <Card number={num} key={num}></Card>})
+    // const numArray=[1,2,3,4,5,6];
+    // const setCard=numArray.map((num)=>{return <Card number={num} key={num}></Card>})
 
+   const data=[{
+        name:'isuru',
+        age:23,
+        details:"he is the first user"
+   },{
+       name:'kamal',
+       age:29,
+       details:"he is the second user"
+   },{
+       name:'amal',
+       age:21,
+       details:"he is the third user"
+   },{
+       name:'pankaja',
+       age:33,
+       details:"he is the fourth user"
+   },
 
+   
+  ];
 
+const userDetailsCards=data.map((user)=>{return <Card userName={user.name} age={user.age} details={user.details}/>})
 
   return (
     <>
@@ -83,8 +104,16 @@ function App() {
 
 
 
-                 
-    <div>{setCard}</div>
+       {/* *********Mapping*******           */}
+       {/* <div>{setCard}</div> */}
+
+
+
+       {/* *****reading Json data using mapping****** */}
+
+       <div>{userDetailsCards}</div>
+
+    
     </>
 
   )
