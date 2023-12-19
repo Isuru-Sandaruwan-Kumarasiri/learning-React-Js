@@ -38,7 +38,7 @@ function App() {
     //  console.log(sqartArray)
 
     const numArray=[1,2,3,4,5,6];
-    const setCard=numArray.map((num)=>{return <Card number={num}></Card>})
+    const setCard=numArray.map((num)=>{return <Card number={num} key={num}></Card>})
 
 
 
