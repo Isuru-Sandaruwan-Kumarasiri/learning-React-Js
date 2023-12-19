@@ -5,7 +5,7 @@ function UserEffect() {
 
     useEffect(()=>{
            console.log("userEffect is working")
-    })
+    },[]);//[]=>dependencis--->page eka render wenkot vitark usereffect call wenwa
     return ( 
         <>
         <div>
