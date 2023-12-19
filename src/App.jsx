@@ -3,6 +3,7 @@ import Footer from "./components/footer"
 import Header from "./components/header"
 import Profile from "./components/profile"
 import Mapping from "./components/mapping";
+import UserEffect from "./components/UserEffect";
 
 
 
@@ -26,6 +27,8 @@ function App() {
 //       count===1 ? setCount("Stop") : setCount(count -1);
 //      }
 //   };
+
+
 
 
   return (
@@ -55,9 +58,16 @@ function App() {
         >Click Me</button>
       </div> */}
 
-      <div>
+{/* ******Mapping******* */}
+      {/* <div>
         <Mapping></Mapping>
-      </div>
+      </div> */}
+
+
+
+    {/* *************UserEffect********** */}
+
+    <UserEffect></UserEffect>
 
     </>
   )
