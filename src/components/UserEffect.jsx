@@ -1,11 +1,12 @@
 import { useState,useEffect} from "react";
 
 function UserEffect() {
-    const [userText,setuserText]=useState("ISuru")
+    const [userText,setuserText]=useState("ISuru");
+    const [subText,setsubText]=useState(0);
 
     useEffect(()=>{
            console.log("userEffect is working")
-    },[]);//[]=>dependencis--->page eka render wenkot vitark usereffect call wenwa
+    },[subText]);//[]=>dependencis--->page eka render wenkot vitark usereffect call wenwa
     return ( 
         <>
         <div>
@@ -14,6 +15,9 @@ function UserEffect() {
            <button onClick={()=>{setuserText("About us")}}>  About us</button>
 
            <h2>{userText}</h2>
+
+           <h1>{subText}</h1>
+           <button onClick={()=>{setsubText(subText+1)}}>Click me</button>
         </div>
         </>
      );
